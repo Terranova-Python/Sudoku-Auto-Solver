@@ -20,11 +20,11 @@ time.sleep(1)
 
 def possible(x, y, n):
     for i in range(0, 9):
-        if grid[i][x] == n and i != y: # Checks for number (n) in X columns
+        if grid[i][x] == n and i != y: # Checks for number (n) in I rows
             return False
 
     for i in range(0, 9):
-        if grid[y][i] == n and i != x: # Checks for number (n) in X columns
+        if grid[y][i] == n and i != x: # Checks for number (n) in I columns
             return False
 
     x0 = (x // 3) * 3
